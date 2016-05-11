@@ -8,8 +8,9 @@ RUN apk add --no-cache bash ca-certificates libstdc++ && \
     wget ${PATCHELF_URL}/${PATCHELF_VER}/${PATCHELF_VER}.tar.gz && \
     tar -C / -xzf ${PATCHELF_VER}.tar.gz && \
     rm ${PATCHELF_VER}.tar.gz
-ADD *.go $PROJECT_ROOT/
 ADD cmd $PROJECT_ROOT/cmd
+ADD commands $PROJECT_ROOT/commands
+ADD debtool $PROJECT_ROOT/debtool
 ADD vendor $PROJECT_ROOT/vendor
 WORKDIR $PROJECT_ROOT/cmd/debtool
 RUN go install

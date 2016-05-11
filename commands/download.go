@@ -1,14 +1,14 @@
-package debtool
+package commands
 
 import (
 	"github.com/codegangsta/cli"
 )
 
-// RegisterGetCommand adds the "get" command to the command line interface.
-func RegisterGetCommand(app *cli.App) {
+// RegisterDownload adds the "get" command to the command line interface.
+func RegisterDownload(app *cli.App) {
 	app.Commands = append(app.Commands, cli.Command{
-		Name:    "get",
-		Aliases: []string{"g"},
+		Name:    "download",
+		Aliases: []string{"d"},
 		Usage:   "download packages from a repository",
 		Flags: []cli.Flag{
 			cli.StringFlag{
@@ -25,4 +25,9 @@ func RegisterGetCommand(app *cli.App) {
 			},
 		},
 	})
+}
+
+// DownloadDo downloads a package.
+func DownloadDo(ctx *cli.Context) {
+	//
 }

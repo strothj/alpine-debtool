@@ -4,11 +4,11 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/strothj/alpine-debtool"
+	"github.com/strothj/alpine-debtool/commands"
 )
 
 func main() {
 	app := cli.NewApp()
-	debtool.RegisterGetCommand(app)
+	commands.AddCommands(app)
 	app.Run(os.Args)
 }
