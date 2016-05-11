@@ -1,0 +1,21 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/codegangsta/cli",
+			"repository": "https://github.com/codegangsta/cli",
+			"vcs": "git",
+			"revision": "9f09b40642330881706afa9403c7b6332fa7c249",
+			"branch": "master",
+			"notests": true
+		},
+		{
+			"importpath": "gopkg.in/yaml.v2",
+			"repository": "https://gopkg.in/yaml.v2",
+			"vcs": "git",
+			"revision": "a83829b6f1293c91addabc89d0571c246397bbf4",
+			"branch": "v2",
+			"notests": true
+		}
+	]
+}
